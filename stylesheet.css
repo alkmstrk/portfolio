@@ -1,0 +1,353 @@
+/*ブラウザのデフォルトによる隙間をなくす*/
+* {
+    margin: 0px;
+    padding: 0px;
+    /*    box-sizing: border-box;*/
+}
+
+
+/*全画面に表示する*/
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/*ヘッダー部分*/
+.header {
+    height: 4%;
+    width: 100%;
+    background-color: rgb(21, 24, 33);
+    z-index: 30;
+}
+
+/*メイン部分*/
+.main {
+    height: 96%;
+    width: 80%;
+    float: left;
+}
+
+/*ホームのメイン*/
+
+#index-main {
+    background-image: url("https://images.unsplash.com/photo-1508402476522-c77c2fa4479d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cea004431da5992ebf1980f53b6e56c0&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+}
+
+
+#index-main h1 {
+    color: white;
+    font-size: 420%;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    /*    文字間隔*/
+    letter-spacing: 6px;
+}
+
+/*プロフィールのメイン*/
+#profile-main {
+    background-image: url("https://images.unsplash.com/photo-1465658100656-b65268ea4c2e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7dc8a5df4263e0d4db07344b06ba2478&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb");
+    background-size: cover;
+}
+
+#profile-main h1 {
+    color: #d60c0c;
+    font-size: 58px;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#profile-main ul {
+    list-style: none;
+    color: white;
+    font-size: 46px;
+    /*    font-family: 'Arial Black', sans-serif;*/
+    font-family: 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
+    float: right;
+    letter-spacing: 3px;
+    padding-right: 66px;
+    padding-top: 60px;
+}
+
+#profile-main li {
+    padding-top: 16px;
+}
+
+/*lkeのメイン*/
+#like-main {
+    background-image: url("https://images.unsplash.com/photo-1462043103994-3eb31d19a057?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=476e696b33a92bbf2d734e63d893e2a3&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb");
+    background-size: cover;
+}
+
+#like-main h1 {
+    color: #d60c0c;
+    font-size: 58px;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#like-main ul {
+    list-style: none;
+    color: white;
+    font-family: 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
+    float: left;
+}
+
+#like-main li {
+    font-size: 44px;
+    padding-top: 12px;
+    letter-spacing: 3px;
+    padding-left: 80px;
+    padding-top: 58px;
+}
+
+/*カーソルを載せたとき文字を大きくする*/
+
+#like-main li:hover {
+    font-size: 54px;
+}
+
+/*liをクリックしたら表示*/
+#like-main p {
+    display: none;
+    font-size: 25px;
+    padding-left: 86px;
+    padding-top: 7px;
+
+}
+
+/*hometownのメイン*/
+#hometown-main {
+    background-image: url("https://kabegamiphoto.com/spot/kobe/image/merikenparkyakei-fhd/0014-1920x1080.jpg");
+    background-size: cover;
+    color: white;
+}
+
+#hometown-main h1 {
+    color: #d60c0c;
+    font-size: 58px;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    padding-bottom: 24px;
+    padding-top: 10px;
+}
+
+#hometown-main p {
+    font-size: 23px;
+    font-family: 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    padding-left: 60px;
+}
+
+/*問い合わせフォームのメイン*/
+
+#contact-main {
+    background-image: url("https://images.unsplash.com/photo-1521225753516-46438a76f25a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e94e618235bc0a90087685e8e8da02ad&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb");
+    background-size: cover;
+}
+
+
+form {
+    color: white;
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 40%;
+    /* フォームの範囲がわかるようにする */
+    padding: 1em;
+    border: 3px solid #d60c0c;
+    border-radius: 1em;
+}
+
+
+#contact_form .input_item dl {
+    margin: 0 0 5px 0;
+    width: 102%;
+}
+
+#contact_form .input_item dl dt {
+    float: left;
+    width: 250px;
+    font-size: 10px;
+    line-height: 30px;
+    height: 30px;
+    padding: 3px 0 3px 0;
+    text-indent: -48px;
+    margin: 0 0 0 38px;
+}
+
+#contact_form .input_item dl dt span {
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    display: inline;
+    line-height: 20px;
+    padding: 3px 7px;
+    color: #000000;
+    height: 18px;
+    border-radius: 4px;
+}
+
+#contact_form .input_item dl dt span.req {
+    background: #d60c0c;
+}
+
+#contact_form .input_item dl dt span.any {
+    background: #cccccc;
+}
+
+#contact_form .input_item dl dd {
+    float: right;
+    width: 480px;
+    /*    font-size: 14px;*/
+    /*    line-height: 3px;*/
+    /*    height: auto;*/
+}
+
+/*
+#contact_form .input_item dl dd li {
+    display: inline-block;
+    margin: 0 1px 0 0;
+    line-height: 30px;
+    height: 30px;
+    padding: 3px 0;
+}
+*/
+
+/*
+#contact_form .input_item dl dd p.mail_caution {
+    font-size: 12px;
+    line-height: 19px;
+    color: #313131;
+    margin: 5px 0 0 0;
+}
+*/
+
+#contact_form .input_item dl dd input[type="text"],
+#contact_form .input_item dl dd input[type="number"],
+#contact_form .input_item dl dd input[type="email"],
+#contact_form .input_item dl dd input[type="tel"] {
+    width: 450px;
+    font-size: 18px;
+    height: 28px;
+    padding: 3px 0 3px 10px;
+    margin: 0;
+}
+
+.transmission {
+    padding-left: 34%;
+}
+
+#contact_form .input_item .transmission input[type="submit"] {
+    display: block;
+    width: 50%;
+    padding: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    color: #d81212;
+    border: 2px solid #d81212;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+#contact_form .input_item .transmission input[type="submit"]:hover {
+    background: #d81212;
+    color: #fff;
+}
+
+#contact_form .input_item dl dd input[type="text"].inp_error,
+#contact_form .input_item dl dd input[type="number"].inp_error,
+#contact_form .input_item dl dd input[type="tel"].inp_error,
+#contact_form .input_item dl dd textarea.inp_error {
+    border: 1px solid #F88A8A;
+    background: #F4D4D4;
+}
+
+#contact_form .input_item dl dd textarea {
+    width: 450px;
+    padding: 8px 3px 8px 10px;
+}
+
+#energy_contact #send_status {
+    padding: 5px 0 25px;
+    text-align: center;
+}
+
+#energy_contact #send_status p {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 25px;
+    border: 1px solid #3c763d;
+    border-radius: 4px;
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+
+/*ハンバーガーメニュー*/
+.menubar {
+    display: none
+}
+
+/*サイド、メニュー部分*/
+
+.side {
+    height: 96%;
+    width: 20%;
+    float: right;
+    background-color: #d81212;
+    position: relative;
+    z-index: 1;
+}
+
+.side li {
+    list-style: none;
+    padding-top: 26px;
+    padding-left: 28px;
+}
+
+
+.side a {
+    color: black;
+    font-size: 36px;
+    font-family: 'Arial Black', sans-serif;
+    /*    色変化、下線をなくす*/
+    text-decoration: none;
+}
+
+
+
+.side a:hover {
+    color: white;
+}
+
+
+#current {
+    color: white;
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: 30px;
+
+}
+
+.bottom-menu li {
+    padding-top: 20px;
+    padding-left: 28px;
+}
+
+a.sns {
+    font-size: 28px;
+
+}

@@ -1,0 +1,286 @@
+/* レスポンシブ（モバイル） */
+@media (max-width: 900px) {
+
+
+
+    .main {
+        width: 100%;
+    }
+
+    /*ホームのメイン*/
+
+
+    #index-main h1 {
+        color: white;
+        font-size: 40px;
+        font-family: 'Arial Black', sans-serif;
+        text-align: center;
+        margin-top: 20%;
+        /*    文字間隔*/
+        letter-spacing: 6px;
+    }
+
+    /*プロフィールのメイン*/
+
+    #profile-main h1 {
+        color: #d60c0c;
+        font-size: 26px;
+        font-family: 'Arial Black', sans-serif;
+        letter-spacing: 1px;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    #profile-main ul {
+        list-style: none;
+        color: white;
+        font-size: 33px;
+        /*    font-family: 'Arial Black', sans-serif;*/
+        font-family: 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
+        float: right;
+        letter-spacing: 3px;
+        padding-right: 69px;
+        padding-top: 42px;
+    }
+
+    #profile-main li {
+        padding-top: 16px;
+    }
+
+    /*lkeのメイン*/
+
+    #like-main h1 {
+        color: #d60c0c;
+        font-size: 26px;
+        font-family: 'Arial Black', sans-serif;
+        letter-spacing: 1px;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    #like-main ul {
+        list-style: none;
+        color: white;
+        font-family: 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
+    }
+
+    #like-main li {
+        font-size: 38px;
+        letter-spacing: 3px;
+        padding-left: 58px;
+        padding-top: 44px;
+    }
+
+    #like-main p {
+        display: none;
+        font-size: 24px;
+        padding-left: 68px;
+        padding-top: 12px;
+
+
+    }
+
+    /*タップすると文字が大きくなる*/
+
+    #like-main li:active {
+        font-size: 42px;
+    }
+
+    /*カーソルを載せたとき文字を大きくする*/
+
+    #like-main li:hover {
+        font-size: 42px;
+    }
+
+
+
+    /*hometownのメイン*/
+
+    #hometown-main h1 {
+        color: #d60c0c;
+        font-size: 26px;
+        font-family: 'Arial Black', sans-serif;
+        letter-spacing: 1px;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 24px;
+    }
+
+    #hometown-main p {
+        font-size: 20px;
+        font-family: 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', sans-serif;
+        text-align: center;
+        letter-spacing: 3p;
+        padding-top: 12px;
+        padding-bottom: 6px;
+        padding-left: 20px;
+    }
+
+    /*問い合わせフォームのメイン*/
+
+    form {
+        color: white;
+        margin-top: 70px;
+        margin-left: 5.6%;
+        width: 79%;
+        /* フォームの範囲がわかるようにする */
+        padding: 1em;
+        border: 3px solid #d60c0c;
+        border-radius: 1em;
+    }
+
+    /*入力欄*/
+    input,
+    textarea {
+        font: 1.4em sans-serif;
+        width: 100%;
+
+        box-sizing: border-box;
+
+        border: 1px solid #d60c0c;
+        border-radius: 0.2em;
+    }
+
+    button:hover {
+        background: white;
+        color: #d81212;
+    }
+
+    button:active {
+        color: white;
+        background: #d81212;
+    }
+
+
+    /*ハンバーガーメニュー*/
+    .menubar {
+        display: block;
+        /*        絶対位置指定*/
+        position: fixed;
+        right: 11px;
+        top: 34px;
+        width: 42px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 3;
+        background: #d81212;
+        text-align: center;
+        border-radius: 0.15em;
+    }
+
+    .menubar span {
+        display: block;
+        /*        menubarに対して*/
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px #222121;
+        /*        変化する時間*/
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+        border-radius: 3em;
+    }
+
+    .menubar span:nth-child(1) {
+        top: 5px;
+    }
+
+    .menubar span:nth-child(2) {
+        top: 13px;
+    }
+
+    .menubar span:nth-child(3) {
+        top: 22px;
+    }
+
+    .menubar span:nth-child(4) {
+        border: none;
+        color: #222121;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: 'Arial Black', sans-serif;
+        top: 26px;
+    }
+
+    /*   タップしたら☓にする*/
+    .menubar.active span:nth-child(1) {
+        top: 18px;
+        left: 6px;
+        /*        斜め45度に回転させる*/
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    /* 2番目と3番目のspanを45度に回転させ2つの線を重ねる */
+    .menubar.active span:nth-child(2),
+    .menubar.active span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+
+    /*    タップすると表示されるメニュー*/
+    /*    見えない位置に隠す*/
+    .side {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background: #d81212;
+        color: #d81212;
+        text-align: center;
+        /*        y軸の方向に移動*/
+        transform: translateY(-100%);
+        transition: all 0.6s;
+        width: 100%;
+    }
+
+    .side ul {
+        width: 100%;
+    }
+
+    .side ul li {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .side ul li a {
+        font-size: 160%;
+        display: block;
+        background-color: #d81212;
+        color: #000;
+        padding: 4%;
+    }
+
+    .side a:hover {
+        color: black;
+    }
+
+    /* このクラスを、jQueryで付与・削除する */
+    .side.active {
+        /*        -100%から0％に移動させることで表示*/
+        transform: translateY(0%);
+    }
+
+    .bottom-menu {
+        position: absolute;
+        bottom: 30px;
+
+    }
+
+    .bottom-menu li {
+        padding-top: 20px;
+        padding-left: 28px;
+    }
+
+    a.sns {
+        font-size: 24px;
+
+    }
+}
